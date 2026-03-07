@@ -1,5 +1,22 @@
 # AscensionPatchNotes
 
+## Version 0.0.4 - 2026-03-07
+
+### 🔥 New Features
+*   Added an exit game button to the main menu.
+
+### ⚔️ Balance & Gameplay
+*   Improved door opening and closing animations for smoother transitions.
+*   Breached doors now instantly eliminate enemies caught in the blast, feature new impact sound effects, and no longer impede player movement.
+*   Implemented new enemy patrol behaviors, including random, static, and room-specific patrols, enhancing tactical variety.
+
+### 🔧 Fixes & Tech
+*   Fixed an issue where the cursor remained locked when returning to the main menu.
+*   Temporarily disabled control rebinding in the main menu as it is being reimplemented.
+*   Fixed an issue with UI sounds in the Main Menu.
+
+---
+
 ## Version 0.0.3 - 2026-03-05
 
 ### 🔥 New Features
