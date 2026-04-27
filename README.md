@@ -1,5 +1,42 @@
 # AscensionPatchNotes
 
+## Version [0.0.5] - 2026-04-27
+
+### 🔥 New Features
+* **Expanded Arsenal:** Integrated the V-33 Hornet Burst Rifle into the loot pool.
+* **Augmentation Suite:** Implemented several new player upgrades, including Displacement Capacitor, Auto-Doc Subroutine, Ocular Euphoria, Adrenal Override, Endorphin Synthesizer, Gyro Stabilizers, and Hydraulic Legs.
+* **Urban Expansion:** Added several new environments, including the Market Room, multiple Arcade variants, a Drug Lab, and several new Apartment layouts.
+* **Economy System:** Introduced a functional Credits system. Players can now collect currency from fallen hostiles and world containers to be used at specialized terminals.
+* **Upgrade Terminals:** Added functional Upgrade Shops within the levels featuring randomized stock, purchase animations, and dedicated audio feedback.
+* **Ballistic Decals:** Implemented a high-performance decal system for persistent bullet holes and blood pooling.
+* **Tutorial Expansion:** Updated the training interface with dedicated modules for the upgrade and credit systems.
+
+### ⚔️ Balance & Gameplay
+* **Projectile Overhaul:** Transitioned all firearms from hitscan to a projectile-based ballistic system for enhanced combat depth.
+* **Combat Calibration:** Adjusted damage values, penetration depth, and critical hit multipliers across the entire weapon roster.
+* **Hostile Intelligence:** Overhauled enemy state machines for better flow between patrolling and engagement. Enemies now utilize a wider variety of weapons and exhibit improved attack timings and ranges.
+* **Survival Tuning:** Increased base health regeneration rates and decreased the delay required for auto-healing to trigger.
+* **Resource Management:** Weapons now initialize with a single magazine; adjusted spawn weights for credits and medical inhalers.
+* **Inhaler Refinement:** Increased the duration and charge capacity of the Drift Inhaler.
+* **Environmental Interaction:** Improved door breaching physics. Doors opened by the player will no longer be automatically closed by passing enemies.
+* **Zone Density:** Increased enemy population in early floors and optimized level generation parameters for better layout variety.
+* **Movement Polish:** Increased base controller sensitivity and refined slide and air control multipliers.
+
+### 🔧 Fixes & Tech
+* **Performance Optimization:** Executed a major sweep to reduce memory allocation, disabled unused 2D physics systems, and transitioned audio assets to streaming to improve frame stability.
+* **Feedback Systems:** Enhanced player damage feedback with refined screen shake, vignettes, and impact particles.
+* **Collision Pass:** Resolved numerous collision errors in the Bank, Noodle Shop, and Apartment sectors, including fixes for "invisible" window barriers.
+* **AI Bug Fixes:** Resolved a critical error where melee hostiles could occasionally kill players in a single strike. Fixed issues preventing ranged enemies from attacking at close proximity.
+* **UI/UX Polish:** Overhauled the Main Menu visual identity and HUD layout. Improved the compass system with better tracking for keycards and elevators.
+* **Ballistic Correction:** Fixed a bug causing projectiles to deviate from the crosshair and resolved an issue where player colliders would rotate incorrectly upon taking damage.
+* **Lighting & Visuals:** Refreshed lighting for the Main Menu and central atrium; updated hologram shaders and particle materials for better visual consistency.
+* **Navigation:** Fixed navigation mesh errors to prevent enemies from becoming stuck on environmental props.
+* **Audio Mastering:** Balanced volume levels for weapons and added cooldowns to repetitive player impact sounds.
+
+
+---
+
+
 ## Version 0.0.4 - 2026-03-07
 
 ### 🔥 New Features
