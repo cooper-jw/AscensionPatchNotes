@@ -1,6 +1,76 @@
 # AscensionPatchNotes
 
+## Version [0.0.6] - 2026-06-22
+
+### 🔥 New Features
+* **Modular HUD Overhaul:** Rebuilt the HUD from the ground up into a modular system. This includes dedicated modules for Dash, Interactions, Killfeed, Upgrades, Objectives, and Credits (featuring animated counting).
+* **HUD & UI Enhancements:** 
+    * Added screen-space object highlighting for interactable items (with options to disable it on doors and shops).
+    * Added a HUD startup boot sequence animation.
+    * Added dedicated displays for floor number, secondary weapons, and utility items.
+    * Added keyboard navigation support to the tutorial carousel.
+    * Added dedicated controller ADS (Aim Down Sights) sensitivity sliders to the options menu.
+    * Added a Credits screen to the main menu.
+* **Utility Item Slot:** Added a dedicated Utility Item inventory slot for inhalers and future utility items, complete with custom input bindings for quick equipping and auto-using.
+* **Dual-Type Weapon Classification:** Implemented a dual-type weapon classification system (e.g., classifying the .50 Magistrate as both a Revolver and a Shotgun) to allow upgrades to affect multiple weapon categories.
+* **New Upgrades:**
+    * **Vendor Uplink:** Marks nearby vendors on the compass when using a utility item (each stack increases search range).
+    * **Munitions Spooler:** Newly acquired handguns and revolvers overflow their magazine capacity to 125% (+25% per stack).
+    * **Recycler Optics:** Critical hits have a 30% chance to refund 1 round to the magazine (+10% chance per stack).
+    * **Momentum Transfer Grip:** Hitting an enemy with a thrown weapon grants +50% fire rate for 2 seconds (+0.5s per stack).
+    * **Volatile Power Cells:** Thrown weapons explode on impact (includes custom VFX and icons).
+    * **Magnetic Actuator:** Increases the range which weapons can be picked up.
+
+### ⚔️ Balance & Gameplay
+* **Floor Progression:** Floor numbers now increment predictably by 10s instead of being randomized. Completing a floor now rewards the player with bonus credits.
+* **Economy & Loot:** Increased the value of credit pickups found throughout levels. Lowered weapon spawn rates, indirectly increasing the availability of credits and inhalers.
+* **Combat & Weapons:**
+    * Enemies now drop weapons towards the player upon death, facilitating smoother weapon-chaining combos.
+    * Improved iron sight alignment and zeroing for the .44 Warden and P-9 Rook.
+    * Enabled scroll wheel wrapping for weapon swapping.
+    * Improved the responsiveness of equipping and using the Drift Inhaler.
+    * Adjusted the layout and size of Upgrade Shop item cards to improve readability.
+    * Rebalanced the "Endorphin Synthesizer" upgrade.
+    * Updated default controller input bindings.
+    * Rotated backroom doors in the Arcade Room to improve combat and movement flow.
+
+### 🔧 Fixes & Tech
+* **Combat & Hit Detection:**
+    * Fixed a bug where penetrating bullets could deal damage to the same target multiple times.
+    * Fixed a bug preventing bullet damage to enemies at point-blank range.
+    * Fixed thrown weapons failing to deal damage when thrown at point-blank range.
+    * Fixed an issue where enemies would shoot over the player's head while the player was crouching.
+    * Fixed the center aim point for the V-33 Hornet burst rifle.
+    * Fixed breached doors continuing to deal damage to enemies after settling on the ground.
+    * Added line-of-sight checks to the "Volatile Power Cells" explosion to prevent damage through solid walls.
+* **Enemies & AI:**
+    * Fixed enemies failing to chase players when taking damage from outside their detection range.
+    * Fixed enemies not appearing on the compass when transitioning directly from patrol to attack.
+    * Fixed an issue where dead enemy bodies could trigger and open doors.
+* **Upgrades & Shop:**
+    * Fixed a bug that caused duplicate items to appear in the Upgrade Shop.
+    * Fixed an issue where the "Munitions Spooler" effect applied to weapons that were dropped and re-acquired.
+    * Fixed a bug where the "Momentum Transfer Grip" upgrade triggered when hitting dead bodies with thrown weapons.
+    * Fixed a bug where the "Recycler Optics" upgrade triggered multiple times with shotguns.
+* **Inhalers & Items:**
+    * Fixed an issue where picking up an inhaler would temporarily disable the crosshair.
+    * Fixed a bug where consuming the final charge of an inhaler failed to re-equip the player's previous weapon.
+    * Fixed an issue where inhalers would repeatedly auto-use if the player had no other weapons equipped.
+* **UI, Audio & Tech:**
+    * Unified and optimized world-space interaction icons for weapons, credits, and keycards to ensure visual consistency.
+    * Upgraded all upgrade icons to higher-resolution textures.
+    * Fixed a UI error on compass elements when rapidly killing enemies immediately after alerting them.
+    * Added an input grace timer to the death screen to prevent accidental restarts or main menu exits.
+    * Improved pause menu layout and buttons, and added fading to death screen input hints.
+    * Separated interaction layers for doors and weapon pickups, allowing pickup-distance buffs to apply exclusively to weapons.
+    * Implemented audio timeouts for kill and hitmarker sound effects to prevent audio spamming when hitting or killing multiple enemies simultaneously.
+    * Deprecated and removed legacy XP, leveling, and damage popup systems from the UI.
+    * Added support for biome-specific wall material overrides.
+    * Updated physics materials on dropped weapons and breached doors for more realistic physical behavior.
+
 ## Version [0.0.5] - 2026-04-27
+
+---
 
 ### 🔥 New Features
 * **Expanded Arsenal:** Integrated the V-33 Hornet Burst Rifle into the loot pool.
@@ -33,9 +103,7 @@
 * **Navigation:** Fixed navigation mesh errors to prevent enemies from becoming stuck on environmental props.
 * **Audio Mastering:** Balanced volume levels for weapons and added cooldowns to repetitive player impact sounds.
 
-
 ---
-
 
 ## Version 0.0.4 - 2026-03-07
 
