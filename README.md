@@ -1,5 +1,27 @@
 # AscensionPatchNotes
 
+## Version 0.0.7 - 2026-06-25
+
+### 🔥 New Features
+*   Added the "S-2 Scatter," a new double-barrelled sawn-off shotgun, to improve the early game loot pool.
+
+### ⚔️ Balance & Gameplay
+*   Increased loot spawn rates and maximum loot per room, with scaling faster.
+*   Adjusted all loot and enemy spawns across all rooms.
+*   Credits no longer spawn in corridors or upgrade shop rooms, encouraging exploration of other room types.
+*   Enemies no longer drop credits on death, incentivizing exploration over kill farming.
+*   Added new enemy and loot spawn point variations, including new keycard locations.
+
+### 🔧 Fixes & Tech
+*   Minor UI fixes and font updates across the Main Menu and Gameplay scenes.
+*   Updated tutorial text, images, fonts, sizes, and positioning to reflect recent balance and UI changes.
+*   Added recent playtester names to the credits.
+*   Improved collision and object placement in the Arcade Room for better player flow.
+*   Implemented a more flexible spawn system, allowing finer control over what types of entities (enemies, weapons, credits, keycards) can appear at specific spawn points.
+*   Removed a collider in the Store Room that caused inconsistent player movement.
+
+---
+
 ## Version [0.0.6] - 2026-06-22
 
 ### 🔥 New Features
@@ -68,9 +90,9 @@
     * Added support for biome-specific wall material overrides.
     * Updated physics materials on dropped weapons and breached doors for more realistic physical behavior.
 
-## Version [0.0.5] - 2026-04-27
-
 ---
+
+## Version [0.0.5] - 2026-04-27
 
 ### 🔥 New Features
 * **Expanded Arsenal:** Integrated the V-33 Hornet Burst Rifle into the loot pool.
@@ -282,9 +304,7 @@
 *   Updated additional legacy materials to utilize the new stylized toon shader.
 *   Resolved rendering issues affecting certain UI elements in the Main Menu.
 
-
 ---
-
 
 ## Version 0.0.1 - 2026-01-19
 
@@ -305,6 +325,4 @@
 * Improved texture quality on corridors to reduce visual banding at a distance.
 * Optimized general graphics and rendering performance.
 
-
 ---
-
